@@ -30,13 +30,14 @@ main {
 /* menu */
 
 nav {
-  /* overflow: hidden; */
   z-index: 5;
   height: 100vh;
   position: absolute;
   width: 100%;
   /* qui si stabilisce la posizione del nav */
-  left: -100%;
+  left: -104%;
+  /* left: -90%; */
+  transition: left 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 nav div:nth-of-type(5) {
@@ -96,6 +97,7 @@ nav div:nth-of-type(5):hover {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  transition: bottom 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 #ok__button {
