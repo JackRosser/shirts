@@ -57,3 +57,5 @@ let objColor = shirt.color;
 // ELEMENTI A CUI VOGLIO APPLICARE LA FUNZIONE
 let insertColor = immissioneDati(formShirtColor, inputColor, shirt, "color");
 button.addEventListener("click", insertColor);
+
+console.log(shirt);
