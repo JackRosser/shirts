@@ -1,5 +1,32 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rock+Salt&display=swap");
+
+/* 
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-neue-light {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+  .bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
 
 * {
   padding: 0;
@@ -242,4 +269,17 @@ section {
 }
 .icon_mod:last-child {
   margin-top: 5px;
+}
+
+.font-modify {
+  background-color: blue;
+  width: 80%;
+  height: 50%;
+  z-index: 99;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  border-radius: 20px;
+  border: 5px solid rgb(41, 41, 41);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
