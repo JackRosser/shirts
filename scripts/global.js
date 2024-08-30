@@ -25,17 +25,6 @@ hamburger.addEventListener("click", function () {
   }
 });
 
-// Parte relativa alla modifica della maglietta
-
-let coloredMiniShirt = document.getElementById("shirt__icon");
-let colorPanel = document.getElementById("shirt__color");
-let colorBigShirt = document.getElementById("base__shirt");
-
-colorPanel.addEventListener("input", function () {
-  coloredMiniShirt.style.color = colorPanel.value;
-  colorBigShirt.style.backgroundColor = colorPanel.value;
-});
-
 //_____________________________________
 // Maglietta pronta per la stampa
 let shirt = {
@@ -68,3 +57,5 @@ let objColor = shirt.color;
 // ELEMENTI A CUI VOGLIO APPLICARE LA FUNZIONE
 let insertColor = immissioneDati(formShirtColor, inputColor, shirt, "color");
 button.addEventListener("click", insertColor);
+
+console.log(shirt);
