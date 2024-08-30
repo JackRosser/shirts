@@ -1,13 +1,27 @@
+// Maglietta pronta per la stampa
+let shirt = {
+  color: "",
+  image: "",
+  text: "",
+  "font-style": []
+};
+
 // funzione per abbassare il panel (che ha class .modify)
+// IMPORTANTISSIMA____________________________________________________________________
 const closeModifyButton = document.querySelector(".main__close");
 
 let closeModify = function () {
+  let bigShirtColor = document.getElementById("base__shirt");
   let modify = document.querySelector(".modify");
   modify.style.bottom = "-300px";
   closeModifyButton.innerHTML = "";
+  if (shirt.color === "") {
+    bigShirtColor.style.backgroundColor = "rgb(210, 210, 210)";
+  }
 };
 
 closeModifyButton.addEventListener("click", closeModify);
+// IMPORTANTISSIMA____________________________________________________________________
 
 // funzione per mettere/togliere il menu a lato
 
@@ -24,15 +38,6 @@ hamburger.addEventListener("click", function () {
     hamburger.style.color = "rgb(117, 117, 117)";
   }
 });
-
-//_____________________________________
-// Maglietta pronta per la stampa
-let shirt = {
-  color: "",
-  image: "",
-  text: "",
-  "font-style": []
-};
 
 // FUNZIONE PER IL SUBMIT
 

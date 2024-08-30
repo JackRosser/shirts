@@ -166,10 +166,10 @@ section {
 
 #shirt_area {
   width: 140px;
-  height: 250px;
+  height: 230px;
   position: absolute;
   z-index: 99;
-  top: 150px;
+  top: 160px;
   right: 110px;
   overflow: hidden;
 }
@@ -181,4 +181,65 @@ section {
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+#position_absolute_text {
+  position: absolute;
+  white-space: pre-wrap; /* Permette il ritorno a capo automatico */
+  overflow-wrap: break-word; /* Interrompe le parole lunghe */
+  word-break: break-word; /* Aggiuntivo per assicurare la rottura delle parole */
+  text-align: center;
+  z-index: 30;
+  width: 100%;
+  top: 0;
+  padding-inline: 15px;
+}
+/* modifica del testo */
+
+.areabox {
+  width: 90%;
+}
+
+.textarea {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+
+#insert_text {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  white-space: pre-wrap; /* Permette il ritorno a capo automatico */
+  word-wrap: break-word; /* Interrompe le parole lunghe */
+  border-radius: 10px;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+#insert_text:focus {
+  outline: none;
+}
+
+.text_icon {
+  width: 10%;
+  margin-left: 5px;
+}
+
+.icon_mod {
+  border-radius: 5px;
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_mod:first-child {
+  margin-bottom: 5px;
+}
+.icon_mod:last-child {
+  margin-top: 5px;
 }

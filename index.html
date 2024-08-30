@@ -21,13 +21,14 @@
       <div class="panel" id="color"><span class="panel__span">Color</span><i class="fas fa-palette"></i></div>
       <div class="panel" id="image"><span class="panel__span">Image</span><i class="far fa-image"></i></div>
       <div class="panel" id="text"><span class="panel__span">Text</span><i class="fas fa-font"></i></div>
-      <div class="panel" id="text_decoration"><span class="panel__span">Text Decoration</span><i class="fas fa-pencil-ruler"></i></div>
+      <div class="panel" id="about"><span class="panel__span">About</span><i class="fas fa-address-card"></i></div>
       <div class="panel printme" id="print"><span class="panel__span">Print</span><i class="fas fa-check"></i></div>
     </nav>
     <div id="hamburger"><i class="fas fa-bars"></i></div>
     <main>
       <!-- CAMPO DEI FORM -->
-      <!-- Colore Maglietta -->
+      <!-- MODIFICA DEL COLORE -->
+
       <form id="color__modify" class="modify">
         <div>
           <!-- questo è la X di chiusura dentro il button -->
@@ -36,6 +37,27 @@
           <label for="shirt__color"></label>
           <input type="color" id="shirt__color" />
           <span id="shirt__icon"><i class="fas fa-tshirt"></i></span>
+        </div>
+        <!-- campo del bottone di chiusura pannello -->
+        <button type="submit" class="ok__button">OK</button>
+      </form>
+
+      <!-- _________________________________________________________ -->
+      <!-- MODIFICA DEL TESTO -->
+      <form id="text__modify" class="modify">
+        <div class="textarea">
+          <!-- questo è la X di chiusura dentro il button -->
+          <div class="main__close"><i class="fas fa-times"></i></div>
+          <!-- _______________________________________ -->
+          <div class="areabox">
+            <label for="insert_text"></label>
+            <textarea wrap="hard" rows="10" cols="50" id="insert_text"></textarea>
+          </div>
+          <div class="text_icon">
+            <div class="icon_mod"><i class="fas fa-font"></i></div>
+            <div class="icon_mod"><i class="fas fa-tint"></i></div>
+            <div class="icon_mod"><i class="fas fa-align-justify"></i></div>
+          </div>
         </div>
         <!-- campo del bottone di chiusura pannello -->
         <button type="submit" class="ok__button">OK</button>
