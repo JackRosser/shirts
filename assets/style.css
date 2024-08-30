@@ -174,3 +174,12 @@ section {
   right: 110px;
   overflow: hidden;
 }
+
+/* usare questo campo per posizionare testi e immagini */
+
+#position_relative {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
