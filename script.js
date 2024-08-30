@@ -25,19 +25,7 @@ hamburger.addEventListener("click", function () {
   }
 });
 
-{
-  /* <form id="color__modify" class="modify">
-<div>
-  <!-- questo è la X di chiusura dentro il button -->
-  <div class="main__close"><i class="fas fa-times"></i></div>
-  <!-- _______________________________________ -->
-  <label for="shirt__color"></label>
-  <input type="color" id="shirt__color" />
-  <span id="shirt__icon"><i class="fas fa-tshirt"></i></span>
-</div>
-<button type="submit" id="ok__button">OK</button>
-</form> */
-}
+// Parte relativa alla modifica della maglietta
 
 let coloredMiniShirt = document.getElementById("shirt__icon");
 let colorPanel = document.getElementById("shirt__color");
@@ -48,7 +36,35 @@ colorPanel.addEventListener("input", function () {
   colorBigShirt.style.backgroundColor = colorPanel.value;
 });
 
-// Ritorna al colore originale se l'utente clicca fuori o non conferma
-// colorPanel.addEventListener("change", function () {
-//   colorBigShirt.style.backgroundColor = `rgb(210, 210, 210)`;
-// });
+//_____________________________________
+// Maglietta pronta per la stampa
+let shirt = {
+  color: "",
+  image: "",
+  text: "",
+  "font-style": []
+};
+
+// FUNZIONE PER IL SUBMIT
+
+let immissioneDati = function (form, valueInteress, obj, propety) {
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    obj[propety] = valueInteress.value;
+    closeModify();
+  });
+};
+
+// BOTTONE GLOBALE DEL SUBMIT
+
+let button = document.querySelector(".ok__button");
+
+// VARIABILI DEL COLORE DELLA MAGLIETTA
+
+let formShirtColor = document.getElementById("color__modify");
+let inputColor = document.getElementById("shirt__color");
+let objColor = shirt.color;
+
+// ELEMENTI A CUI VOGLIO APPLICARE LA FUNZIONE
+let insertColor = immissioneDati(formShirtColor, inputColor, shirt, "color");
+button.addEventListener("click", insertColor);
